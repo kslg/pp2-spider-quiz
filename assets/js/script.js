@@ -53,6 +53,17 @@ function displayQuestion() {
     questionCount.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
 }
 
+//Function to calculate scores
+function calcScore(e){
+    if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
+        score= score+1;
+        document.getElementById(e.id).style.background= 'limegreen';
+    } else {
+        document.getElementById(e.id).style.background= 'tomato';
+    }
+    setTimeout(nextQuestion,300);
+}
+
 //Function to display next question
 function nextQuestion(){
     if(i<questionBank.length-1)
@@ -65,19 +76,13 @@ function nextQuestion(){
         scoreboard.style.display= 'block'
     }
 }
+
 //Click events to next button
 next.addEventListener('click',nextQuestion);
 
-
-//Function to calculate scores
-function calcScore(e){
-    if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
-        score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
-    } else {
-        document.getElementById(e.id).style.background= 'tomato';
-    }
-    setTimeout(nextQuestion,300);
+//Back to Quiz button event
+function backToQuiz(){
+    location.reload();
 }
 
 //Function to check Answers
@@ -94,6 +99,7 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
+
 
 displayQuestion();
 
