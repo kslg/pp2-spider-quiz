@@ -4,37 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- css file link -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document</title>
+    <title>Spider-Quiz</title>
 </head>
 <body>
     <h1 id="title">Spider-Quiz</h1>
 
-    <!-- quiz-container -->
+    <!-- quiz container -->
     <div id="quiz-container">
         <!-- question container -->
         <div class="questions">
+        
+        <div id="countdown">
+        </div>
+
         <div id="question"></div>
-        <ol>
-            <li>Question 1</li>
-            <li>Question 2</li>
-            <li>Question 3</li>
-            <li>Question 4</li>
+        <ol type="A">
+            <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+            <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+            <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+            <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
         </ol>
 
         <div id="questionCount"></div>
-
         </div>
 
         <div class="buttons">
-            <button>Next</button>
-            <button>Reset</button>
+            <button type="button" id="next" class="next">Next</button>
+            <button type="button" value="Refresh" onClick="refresh(this)">Reset</button>
+        </div>
+
+        <!-- scoreboard section -->
+        <div id="scoreboard">
+            <h2 id="score-title">Your Score</h2>
+            <div id="score"></div>
+            <button type="button" id="score-btn-one" onclick="backToQuiz()">Back to Quiz</button>
+            <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+        </div>
+
+        <!-- answers section -->
+        <div id="answerBank">
+        <h2>Answers :</h2>
+        <ol type="1" id="answers">
+        </ol>
+        <button type="button" id="score-btn-two" onclick="backToQuiz()">Back to Quiz</button>
         </div>
 
     </div>
-<!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
+    
+    <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
