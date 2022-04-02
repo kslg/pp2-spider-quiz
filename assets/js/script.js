@@ -108,6 +108,8 @@ var downloadTimer = setInterval(function(){
     if(timeleft === -1){
         clearInterval(downloadTimer);
         document.getElementById("countdown").innerHTML = "Times Up!";
+        alert(`Oh no! You've have run out of time. Hit the reset button and try again.`); // displays prompt message on screen to the user
+        throw `Player ran out of time. Need to restart the game`; // logs an error in the console
     } else {
     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
     }
