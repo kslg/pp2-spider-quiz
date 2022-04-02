@@ -68,4 +68,32 @@ function nextQuestion(){
 //Click events to next button
 next.addEventListener('click',nextQuestion);
 
+
+//Function to calculate scores
+function calcScore(e){
+    if(e.innerHTML===questionBank[i].answer && score<questionBank.length){
+        score= score+1;
+        document.getElementById(e.id).style.background= 'limegreen';
+    } else {
+        document.getElementById(e.id).style.background= 'tomato';
+    }
+    setTimeout(nextQuestion,300);
+}
+
+//Function to check Answers
+function checkAnswer(){
+    var answerBank= document.getElementById('answerBank');
+    
+    var answers= document.getElementById('answers');
+    answerBank.style.display= 'block';
+    scoreboard.style.display= 'none';
+    
+    for(var a=0;a<questionBank.length;a++) {
+        var list= document.createElement('li');
+        list.innerHTML= questionBank[a].answer;
+        answers.appendChild(list);
+    }
+}
+
 displayQuestion();
+
