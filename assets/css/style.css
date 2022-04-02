@@ -26,3 +26,25 @@ h2, h3, h4 {
     background: rgba(105,224,90,0.55);
     font-family: Bebas Neue, Times, serif;
 }
+.questions{
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: rgba(0,255,221,0.45);
+    cursor: default;
+    border-radius: 1rem;
+}
+#question{
+    margin-bottom: 1rem;
+}
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem blue;
+    width: 15rem;
+    background: lightblue;
+    border-radius: 1rem;
+}
+.option:hover{
+    color: white;
+}
