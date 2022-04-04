@@ -76,7 +76,6 @@ function nextQuestion(){
         scoreboard.style.display= 'block'
     }
 }
-
 //Click events to next button
 next.addEventListener('click',nextQuestion);
 
@@ -102,17 +101,24 @@ function checkAnswer(){
 
 displayQuestion();
 
-// Countdown Timer
-var timeleft = 10;
-var downloadTimer = setInterval(function(){
-    if(timeleft === -1){
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "Times Up!";
-        alert(`Oh no! You've have run out of time. Hit the reset button and try again.`); // displays prompt message on screen to the user
-        throw `Player ran out of time. Need to restart the game`; // logs an error in the console
-    } else {
-    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-    }
-    timeleft -= 1;
+// Countdown timer
 
-}, 1000);
+document.getElementById("gameStart").addEventListener("click", function(){
+    var timeleft = 15;
+
+    var downloadTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + 
+    " " + "seconds remaining";
+
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Time is up! "
+    }
+    }, 1000);
+});
+
+// Connected to the Reset button and reloads the page so the player can retsart the quiz and the timer.
+function refresh(){
+    window.location.reload("Refresh")
+  }
