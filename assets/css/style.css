@@ -11,6 +11,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    
+}
+
+.gameArea{
+    background: url("/assets/images/Spider-Man_background_image.jpeg")
 }
 
 h2, h3, h4 {
