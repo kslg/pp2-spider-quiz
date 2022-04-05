@@ -111,3 +111,10 @@ button:active{
 #answers{
     margin-top: 1rem;
 }
+
+/* Fixing the footer position for the share widget*/
+.sharethis-inline-share-buttons{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
