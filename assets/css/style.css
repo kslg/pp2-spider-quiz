@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#quiz-container{
+    padding: 1px;
+    padding-bottom: 200px;
+}
+
 body{
     font-family: Heebo, sans-serif;
     background-size: cover;
@@ -22,7 +28,8 @@ body.active {
     --primary-text-color: #fff;
     --secondary-text-color: #eee;
   }
-  #theme-toggler {
+
+#theme-toggler {
     position: fixed;
     top: 15px;
     right: 25px;
