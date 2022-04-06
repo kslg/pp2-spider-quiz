@@ -17,6 +17,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+
+    /* Dark Mode */
     background: var(--primary-bg-color);    
 }
 
@@ -42,6 +44,14 @@ body.active {
     border-radius: 5px;
   }
 /* End of Dark Mode CSS */
+
+#footer {
+    background: #696868;
+    padding: 94px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 .gameArea{
     background: url("/assets/images/Spider-Man_background_image.jpeg")
@@ -151,7 +161,7 @@ button:active{
 /* Fixing the footer position for the share widget*/
 .sharethis-inline-share-buttons{
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     width: 100%;
 }
 
