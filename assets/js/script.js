@@ -98,7 +98,6 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
-
 displayQuestion();
 
 // Countdown timer
@@ -118,7 +117,11 @@ document.getElementById("gameStart").addEventListener("click", function(){
     }, 1000);
 });
 
-// Connected to the Reset button and reloads the page so the player can retsart the quiz and the timer.
+/** 
+ * Connected to the Reset button and 
+ * reloads the page so the player 
+ * can retsart the quiz and the timer.
+ */ 
 function refresh(){
     window.location.reload("Refresh")
   }
