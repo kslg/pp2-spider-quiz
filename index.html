@@ -11,6 +11,7 @@
     <!--To get your favicon displaying in Production-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
     <title>Spider-Quiz</title>
+
     <!-- The JS source for the Share This widget -->
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=624caa3dc431db0019ab9ada&product=inline-share-buttons" async="async"></script>
 </head>
@@ -23,9 +24,10 @@
         <!-- question container -->
         <div class="questions">
         
+            <!-- Countdown timer -->
         <div id="countdown">
         </div>
-
+<!-- Quiz questions -->
         <div id="question"></div>
         <ol type="A">
             <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
@@ -33,7 +35,7 @@
             <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
             <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
         </ol>
-
+<!-- Question count -->
         <div id="questionCount"></div>
         </div>
 
@@ -42,17 +44,22 @@
 <!-- Modal content -->
 <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <ul>
+        <li>The aim of the game: You have sixty seconds to answer all five questions correctly.</li>
+        <li>Press 'START' to start the timer.</li>
+        <li>Press 'NEXT' to move onto the next question.</li>
+        <li>Press 'RESET' to restart the quiz.</li>
+    </ul>
+
 </div>
     </div>
         <div class="buttons">
             <button type="button" id="gameStart" class="gameStart">Start</button>
             <button type="button" id="next" class="next">Next</button>
             <button type="button" value="Refresh" onClick="refresh(this)">Reset</button>
-            <button type="button" id="myBtn">Open Modal</button>
+            <button type="button" id="myBtn">How to Play</button>
         </div>
     </div>
-
 
     <!-- scoreboard section -->
     <div id="scoreboard">
@@ -62,7 +69,7 @@
         <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
     </div>
     
-    <!-- answers section -->
+    <!-- Answers section -->
     <div id="answerBank">
         <h2>Answers :</h2>
         <ol type="1" id="answers">
