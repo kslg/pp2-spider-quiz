@@ -11,8 +11,30 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    
+    background: var(--primary-bg-color);    
 }
+
+/* Start of Dark Mode CSS */
+
+body.active {
+    --primary-bg-color: #222;
+    --secondary-bg-color: #333;
+    --primary-text-color: #fff;
+    --secondary-text-color: #eee;
+  }
+  #theme-toggler {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    padding: 15px 20px;
+    font-size: 30px;
+    background: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+/* End of Dark Mode CSS */
 
 .gameArea{
     background: url("/assets/images/Spider-Man_background_image.jpeg")
@@ -22,6 +44,8 @@ h2, h3, h4 {
     font-family: Heebo, sans-serif;
     letter-spacing: 1px;
     color: black;
+    line-height: 2;
+    color: var(--primary-text-color);
 }
 
 #title{
