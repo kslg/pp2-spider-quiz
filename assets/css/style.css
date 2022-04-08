@@ -62,10 +62,10 @@ body.active {
     background: url("/assets/images/spider-man-background.jpeg") no-repeat;
 }
 
-h2, h3, h4 {
+h2, h3, h4, p{
     font-family: Heebo, sans-serif;
     letter-spacing: 1px;
-    color: black;
+    color: #2b3784;
     line-height: 2;
     color: var(--primary-text-color);
 }
@@ -82,20 +82,32 @@ h2, h3, h4 {
     margin: 3rem auto;
     width: 90vw;
     padding: 2rem;
-    background: rgba(0,255,221,0.45);
+    background: rgba(254,243,189,0.86);
     cursor: default;
     border-radius: 1rem;
 }
 #question{
     margin-bottom: 1rem;
 }
+
+#questionCount{
+    color: rgb(43,55,132); 
+}
+#question{
+    color: rgb(43,55,132); 
+}
+#countdown{
+    color: rgb(43,55,132); 
+}
+
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    border-bottom: solid 0.1rem blue;
+    border-bottom: solid 0.1rem rgb(233,31,45);
     width: 15rem;
-    background: lightblue;
+    background: rgb(255,217,102);
     border-radius: 1rem;
+    color:rgb(43, 55, 132)
 }
 .option:hover{
     color: white;
@@ -103,7 +115,7 @@ h2, h3, h4 {
 ol{
     position: relative;
     padding: 0 1.5rem;
-    color: rgb(1,73,73);
+    color: rgb(43,55,132);
 }
 span{
     display: block;
