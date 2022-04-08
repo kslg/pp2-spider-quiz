@@ -28,57 +28,51 @@
     <div id="theme-toggler" class="fas fa-moon"></div>
     <h1 id="title">Spider-Quiz</h1>
 <section>
-    <div class="gameArea">
+
+
+
+<div class="gameArea">
+        
     <!-- quiz container -->
     <div id="quiz-container">
         <!-- question container -->
         <div class="questions">
-        
             <!-- Countdown timer -->
-        <div id="countdown">
+            <div id="countdown">
+            </div>
+                <!-- Quiz questions -->
+                <div id="question"></div>
+                <ol type="A">
+                    <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                </ol>
+                    <!-- Question count -->
+                    <div id="questionCount">
+                    </div>                          
         </div>
-<!-- Quiz questions -->
-        <div id="question"></div>
-        <ol type="A">
-            <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
-        </ol>
-<!-- Question count -->
-        <div id="questionCount"></div>
-        </div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-<!-- Modal content -->
-<div class="modal-content">
-    <span class="close">&times;</span>
-    <ul>
-        <li>The aim of the game: You have sixty seconds to answer all five questions correctly.</li>
-        <li>Press 'START' to start the timer.</li>
-        <li>Press 'NEXT' to move onto the next question.</li>
-        <li>Press 'RESET' to restart the quiz.</li>
-    </ul>
-
-</div>
-    </div>
+        <!-- Quiz Control Buttons -->
         <div class="buttons">
             <button type="button" id="gameStart" class="gameStart">Start</button>
             <button type="button" id="next" class="next">Next</button>
             <button type="button" value="Refresh" onClick="refresh(this)">Reset</button>
-            <button type="button" id="myBtn">How to Play</button>
-        </div>
+            <button type="button" id="show-modal-btn">How to Play</button>
+            <div id="overlay">
+                <div id="modal">
+                    <p>TEST</p>
+                    <button type="button" id="close-modal-btn">Close</button>
+                </div>
+            </div>
+            <div class="website-content"></div>
     </div>
-
     <!-- scoreboard section -->
     <div id="scoreboard">
         <h2 id="score-title">Your Score</h2>
         <div id="score"></div>
         <button type="button" id="score-btn-one" onclick="backToQuiz()">Back to Quiz</button>
         <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
-    </div>
-    
+    </div>  
     <!-- Answers section -->
     <div id="answerBank">
         <h2>Answers :</h2>
@@ -86,13 +80,14 @@
         </ol>
         <button type="button" id="score-btn-two" onclick="backToQuiz()">Back to Quiz</button>
     </div>
-
 </div>
 </section>
+
     <!-- Share This widget in the footer -->
     <footer id="footer">
         <div class="sharethis-inline-share-buttons"></div>
     </footer>
+
     <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
     <script src="/assets/js/script.js"></script>
 </body>

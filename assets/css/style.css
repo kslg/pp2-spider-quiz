@@ -23,7 +23,12 @@ body{
 }
 
 /* Start of Dark Mode CSS */
-
+:root {
+    --primary-bg-color: #eee;
+    --secondary-bg-color: rgb(22, 1, 250);
+    --primary-text-color: #666;
+    --secondary-text-color: #999;
+}
 body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: #333;
@@ -37,7 +42,7 @@ body.active {
     right: 25px;
     padding: 15px 20px;
     font-size: 30px;
-    background: var(--secondary-bg-color);
+    background: var(--primary-bg-color);
     color: var(--primary-text-color);
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -46,7 +51,7 @@ body.active {
 /* End of Dark Mode CSS */
 
 #footer {
-    background: #696868;
+    background: var(--secondary-bg-color);
     padding: 94px 0 0 0;
     position: fixed;
     bottom: 0;
@@ -54,7 +59,7 @@ body.active {
 }
 
 .gameArea{
-    background: url("/assets/images/Spider-Man_background_image.jpeg")
+    background: url("/assets/images/Spider-Man_background_image.jpeg") no-repeat;
 }
 
 h2, h3, h4 {
@@ -70,7 +75,7 @@ h2, h3, h4 {
     padding: 0.8rem 0;
     font-size: 3rem;
     color: rgb(49,70,7);
-    background: rgba(105,224,90,0.55);
+    background: var(--secondary-bg-color);
     font-family: Bebas Neue, Times, serif;
 }
 .questions{
@@ -164,42 +169,30 @@ button:active{
     bottom: 30px;
     width: 100%;
 }
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
+/* MODAL */
+#overlay{
+    display: none;
+    position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal{
+    max-width: 600px;
+    height: 300px;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.website-content{
+    height: 100vh;
+}
