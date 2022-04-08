@@ -1,0 +1,11 @@
+What I can suggest is to use bootstrap modals - https://getbootstrap.com/docs/4.6/components/modal/
+I don't know if you are using Bootstrap in your project but is great to use as it already has styles included and also you don't have to write the JavaScript
+
+Make sure you have the correct attributes so that when you either click a button or an event is happening. Also make sure you are not reusing id's twice that may conflict.
+Currently I cannot see the modal at all on your site when I finish the game so it could also be the styling you are implementing in your javascript.
+This is a jquery resource but it shows you if you want to programmatically trigger a modal : https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+Another resource about alternative modals:
+https://www.w3schools.com/w3css/w3css_modal.asp
+Hope this helps, as I said feel free to look at these suggestions and reach out with a new ticket when you have tried them
+
+
