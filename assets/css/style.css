@@ -26,13 +26,13 @@ body{
 :root {
     --primary-bg-color: #eee;
     --secondary-bg-color: rgb(68, 123, 190);
-    --primary-text-color: #666;
+    --primary-text-color: rgb(241, 194, 50);
     --secondary-text-color: #999;
 }
 body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: rgb(43, 55, 132);
-    --primary-text-color: #070706;
+    --primary-text-color: rgb(177 ,19, 19);
     --secondary-text-color: #eee;
   }
 
@@ -74,7 +74,7 @@ h2, h3, h4 {
     text-align: center;
     padding: 0.8rem 0;
     font-size: 3rem;
-    color: rgb(241,194,50);
+    color: var(--primary-text-color);
     background: var(--secondary-bg-color);
     font-family: Bebas Neue, Times, serif;
 }
