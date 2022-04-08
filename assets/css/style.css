@@ -25,14 +25,14 @@ body{
 /* Start of Dark Mode CSS */
 :root {
     --primary-bg-color: #eee;
-    --secondary-bg-color: rgb(22, 1, 250);
+    --secondary-bg-color: rgb(68, 123, 190);
     --primary-text-color: #666;
     --secondary-text-color: #999;
 }
 body.active {
     --primary-bg-color: #222;
-    --secondary-bg-color: #333;
-    --primary-text-color: #fff;
+    --secondary-bg-color: rgb(43, 55, 132);
+    --primary-text-color: #070706;
     --secondary-text-color: #eee;
   }
 
@@ -74,7 +74,7 @@ h2, h3, h4 {
     text-align: center;
     padding: 0.8rem 0;
     font-size: 3rem;
-    color: rgb(49,70,7);
+    color: rgb(241,194,50);
     background: var(--secondary-bg-color);
     font-family: Bebas Neue, Times, serif;
 }
