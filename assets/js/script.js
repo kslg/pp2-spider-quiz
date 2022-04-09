@@ -139,22 +139,17 @@ themeToggler.onclick = () => {
   }
 };
 
-
-/* Bootstrap MODAL */
-(function($) {
-document.ready(function(){
-    $("#myBtn").click(function(){
-      $("#myModal").modal();
-    });
-  });
-});
-
-/* MODAL
 const overlay = document.querySelector("#overlay");
 
-document.querySelector("#show-modal-btn").addEventListener("click", () => {
-    overlay.style.display = "block";
-})
-document.querySelector("#close-modal-btn").addEventListener("click", () => {
-    overlay.style.display = "none";
-}) */
+  document.querySelector("#show-modal-btn").
+  addEventListener("click", () => {
+      overlay.style.display = "block";
+  })
+
+  document.querySelector("#close-modal-btn").
+  addEventListener("click", () => {
+      overlay.style.display = "none";
+  })
+
+  const modalOverlay = document.getElementById("overlay")
+  modalOverlay.classList.add('hide')

@@ -194,19 +194,7 @@ button:hover{
     bottom: 18px;
     width: 100%;
 }
-/* MODAL */
-#overlay{
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* #modal{
+#modal{
     max-width: 600px;
     height: 300px;
     margin: auto;
@@ -218,6 +206,10 @@ button:hover{
     right: 0;
 }
 
+.hide {
+    display: none;
+}
+
 .website-content{
     height: 100vh;
-}*/
+}

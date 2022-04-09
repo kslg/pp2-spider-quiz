@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This unofficial quiz game inspired by the comic book hero Spider-man.">
+    <meta name="description" content="An unofficial quiz game inspired by the comic book hero Spider-man.">
     <meta name="keywords" content="spider-man, spiderman, spiderman game, quiz games, spidey games, spider-man quiz">
     <meta name="author" content="Krishan Gharu for Code Institute Portfolio Project 2">
     
@@ -17,6 +17,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
+    
 
     <!-- css file link -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -38,26 +39,7 @@
 <div class="gameArea">
 
   <div class="container">
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-      
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
+
         
     <!-- quiz container -->
     <div id="quiz-container">
@@ -84,7 +66,20 @@
             <button type="button" id="next" class="next" aria-label="Next. Click or tap to move on to the next question">Next</button>
             <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset. Click or tap to reset the quiz">Reset</button>
             <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-lg" id="myBtn" aria-label="How to play. Click or tap for quiz instructions">Open Modal</button>
+            <button type="button" id="show-modal-btn">show modal</button>
+                        <!-- Modal -->
+                        <div id="overlay">
+                            <div id="modal">
+                                <p>feg</p>
+                                <p>feg</p>
+                                <p>feg</p>
+                                <p>feg</p>
+                                <p>feg</p>
+                                <button type="button" id="close-modal-btn">Close</button>
+                            </div>
+                        </div>
+                        <div class="website-content"></div>
+
         </div>
 
     </div>
@@ -116,8 +111,5 @@
 
     <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
     <script src="/assets/js/script.js"></script>
-    <!-- Bootstrap jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
