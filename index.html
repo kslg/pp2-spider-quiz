@@ -92,18 +92,18 @@
   
     
     <!-- scoreboard section -->
-    <div id="scoreboard">
+    <div id="scoreboard" aria-label="This is the scoreboard area">
         <h2 id="score-title">Your Score</h2>
-        <div id="score"></div>
-        <button type="button" id="score-btn-one" onclick="backToQuiz()">Back to Quiz</button>
-        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+        <div id="score" aria-label="You final score for the quiz"></div>
+        <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+        <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
     </div>  
     <!-- Answers section -->
-    <div id="answerBank">
+    <div id="answerBank" aria-label="Your answers">
         <h2>Answers :</h2>
         <ol type="1" id="answers">
         </ol>
-        <button type="button" id="score-btn-two" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="score-btn-two" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
     </div>
 </div>
 </section>
