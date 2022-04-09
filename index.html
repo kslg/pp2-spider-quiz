@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is the SEO meta data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This unofficial quiz game inspired by the comic book hero Spider-man.">
+    <meta name="keywords" content="spider-man, spiderman, spiderman game, quiz games, spidey games, spider-man quiz">
+    <meta name="author" content="Krishan Gharu for Code Institute Portfolio Project 2">
     
     <!-- Font Awesome -->
     <link
@@ -19,46 +23,46 @@
 
     <!--To get your favicon displaying in Production-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+
     <title>Spider-Quiz</title>
 
     <!-- The JS source for the Share This widget -->
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=624caa3dc431db0019ab9ada&product=inline-share-buttons" async="async"></script>
 </head>
 <body>
-    <div id="theme-toggler" class="fas fa-moon"></div>
-    <h1 id="title">Spider-Quiz</h1>
+    <header>
+        <div id="theme-toggler" class="fas fa-moon" aria-label="Toggle between light and dark mode"></div>
+        <h1 id="title">Spider-Quiz</h1>
+    </header>
 <section>
-
-
-
 <div class="gameArea">
         
     <!-- quiz container -->
     <div id="quiz-container">
         <!-- question container -->
-        <div class="questions">
+        <div class="questions" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
             <!-- Countdown timer -->
-            <div id="countdown">
+            <div id="countdown" aria-label="This is the countdown timer">
             </div>
                 <!-- Quiz questions -->
                 <div id="question"></div>
                 <ol type="A">
-                    <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-                    <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-                    <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-                    <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+                    <li class="option"><span id="option0" onclick="calcScore(this)" aria-label="Click or tap for answer one"></span></li>
+                    <li class="option"><span id="option1" onclick="calcScore(this)" aria-label="Click or tap for answer two"></span></li>
+                    <li class="option"><span id="option2" onclick="calcScore(this)" aria-label="Click or tap for answer three"></span></li>
+                    <li class="option"><span id="option3" onclick="calcScore(this)" aria-label="Click or tap for answer four"></span></li>
                 </ol>
                     <!-- Question count -->
-                    <div id="questionCount">
+                    <div id="questionCount" aria-label="This is the question counter, counting up to five">
                     </div>                          
         </div>
         <!-- Quiz Control Buttons -->
         <div class="buttons">
-            <button type="button" id="gameStart" class="gameStart">Start</button>
-            <button type="button" id="next" class="next">Next</button>
-            <button type="button" value="Refresh" onClick="refresh(this)">Reset</button>
+            <button type="button" id="gameStart" class="gameStart" aria-label="Start. Click or tap to start the timer">Start</button>
+            <button type="button" id="next" class="next" aria-label="Next. Click or tap to move on to the next question">Next</button>
+            <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset. Click or tap to reset the quiz">Reset</button>
             <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button>
+            <button type="button" class="btn btn-info btn-lg" id="myBtn" aria-label="How to play. Click or tap for quiz instructions">Open Modal</button>
         </div>
 
     </div>
@@ -106,7 +110,8 @@
 
     <!-- Share This widget in the footer -->
     <footer id="footer">
-        <div class="sharethis-inline-share-buttons"></div>
+        <h3>Share:</h3>
+        <div class="sharethis-inline-share-buttons" aria-label="Share the quiz with family and friends on social media"></div>
     </footer>
 
     <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
