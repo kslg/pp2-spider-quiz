@@ -150,6 +150,13 @@ button{
 button:active{
     background: lavender;
 }
+
+button:hover{
+    border-color: #df1f2d;
+    color: rgb(255, 217, 102);
+    background: rgba(43, 55, 132, 1);
+}
+
 #scoreboard,#answerBank{
     width: 20rem;
     background: rgba(230,230,250,0.77);
