@@ -112,10 +112,19 @@ document.getElementById("gameStart").addEventListener("click", function(){
     timeleft -= 1;
     if(timeleft <= 0){
         clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "Time is up! "
-    }
+        document.getElementById("countdown").innerHTML = "Time is up!"
+        alert("Hey! You got it right! :D");
+    }else {
+        alert = function() {};
+        }
     }, 1000);
 });
+
+
+/* if (innerHTML = "Time is up!") {
+    
+}   */
+
 
 /** 
  * Connected to the Reset button and 

@@ -86,7 +86,7 @@ h2, h3, h4, p{
 }
 .questions{
     margin: 3rem auto;
-    width: 90vw;
+    width: 70vw;
     padding: 2rem;
     background: rgba(254,243,189,0.86);
     cursor: default;
@@ -98,9 +98,11 @@ h2, h3, h4, p{
 
 #questionCount{
     color: rgb(43,55,132); 
+    text-align: center;
 }
 #question{
     color: rgb(43,55,132); 
+    text-align: center;
 }
 #countdown{
     color: rgb(43,55,132); 
@@ -120,7 +122,7 @@ h2, h3, h4, p{
 }
 ol{
     position: relative;
-    padding: 0 1.5rem;
+    padding: 0 22.5rem;
     color: rgb(43,55,132);
 }
 span{
@@ -217,4 +219,12 @@ button:hover{
 
 .website-content{
     height: 100vh;
+}
+
+/******************** responsive queries start *******************/
+
+@media screen and (max-width: 1280px){
+    ol{
+        padding: 0px 19.5rem;
+    }
 }
