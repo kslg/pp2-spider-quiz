@@ -63,7 +63,7 @@ body.active {
 }
 
 .gameArea{
-    background: url("/assets/images/spider-man-background.jpeg") no-repeat;
+    background: url("../images/spider-man-background.jpeg") no-repeat;
     background-size: cover;
     height: 777px;
 }
