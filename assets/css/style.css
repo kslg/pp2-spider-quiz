@@ -205,6 +205,11 @@ button:hover{
     left: 0;
     right: 0;
 }
+#close-modal-btn{
+    bottom: 0;
+    position: inherit;
+    margin-left: -61px;
+}
 
 .hide {
     display: none;
