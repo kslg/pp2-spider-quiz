@@ -139,7 +139,15 @@ themeToggler.onclick = () => {
   }
 };
 
-/* MODAL */
+
+/* Bootstrap MODAL */
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("#myModal").modal();
+    });
+  });
+
+/* MODAL
 const overlay = document.querySelector("#overlay");
 
 document.querySelector("#show-modal-btn").addEventListener("click", () => {
@@ -147,4 +155,4 @@ document.querySelector("#show-modal-btn").addEventListener("click", () => {
 })
 document.querySelector("#close-modal-btn").addEventListener("click", () => {
     overlay.style.display = "none";
-})
+}) */
