@@ -1,29 +1,29 @@
 //Question bank
 var questionBank = [
     {
-        question : 'Question 1',
-        option : ['Answer1', 'Answer2', 'Answer3', 'Answer4'],
-        answer : 'Answer1'
+        question : 'Where does Peter Parker live?',
+        option : ['L.A', 'Chicago', 'Punjab', 'New York'],
+        answer : 'New York'
     },
     {
-        question : 'Question 2',
-        option : ['Answer1', 'Answer2', 'Answer3', 'Answer4'],
-        answer : 'Answer1'
+        question : 'Who made the suit Peter wore for most of the movie?',
+        option : ['Bruce Banner', 'Aunt May', 'Tony Stark', 'I did!'],
+        answer : 'Tony Stark'
     },
     {
-        question : 'Question 3',
-        option : ['Answer1', 'Answer2', 'Answer3', 'Answer4'],
-        answer : 'Answer1'
+        question : 'What is the acronym attributed to Tony Stark&#39;s high-tech glasses?',
+        option : ['J.U.L.Y.', 'E.D.I.T.H.', 'S.H.I.E.L.D.', 'B.O.B'],
+        answer : 'E.D.I.T.H.'
     },
     {
-        question : 'Question 4',
-        option : ['Answer1', 'Answer2', 'Answer3', 'Answer4'],
-        answer : 'Answer1'
+        question : 'Finish the quote: "With great power comes great..."',
+        option : ['Responsibility', 'Catastrophe', 'Sensibility', 'Accountability'],
+        answer : 'Responsibility'
     },
     {
-        question : 'Question 5',
-        option : ['Answer1', 'Answer2', 'Answer3', 'Answer4'],
-        answer : 'Answer1'
+        question : 'In Tobey Maguire&#39;s Spider-Man, how does Spider-Man shoot his webs?',
+        option : ['Using Web Shooters', 'From his wrists', 'From his finger nails', 'They magically appear'],
+        answer : 'From his wrists'
     }
 ];
 
@@ -141,11 +141,13 @@ themeToggler.onclick = () => {
 
 
 /* Bootstrap MODAL */
-$(document).ready(function(){
+(function($) {
+document.ready(function(){
     $("#myBtn").click(function(){
       $("#myModal").modal();
     });
   });
+});
 
 /* MODAL
 const overlay = document.querySelector("#overlay");

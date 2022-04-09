@@ -8,7 +8,7 @@
 
 #quiz-container{
     padding: 1px;
-    padding-bottom: 379px;
+    padding-bottom: 171px;
 }
 
 body{
@@ -52,14 +52,20 @@ body.active {
 
 #footer {
     background: var(--secondary-bg-color);
-    padding: 94px 0 0 0;
+    padding: 0px 0 0 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+#footer-text{
+    text-align: center;
+    line-height: 125px;
+}
 
 .gameArea{
     background: url("/assets/images/spider-man-background.jpeg") no-repeat;
+    background-size: cover;
+    height: 777px;
 }
 
 h2, h3, h4, p{
@@ -178,7 +184,7 @@ button:active{
 /* Fixing the footer position for the share widget*/
 .sharethis-inline-share-buttons{
     position: fixed;
-    bottom: 30px;
+    bottom: 18px;
     width: 100%;
 }
 /* MODAL */
