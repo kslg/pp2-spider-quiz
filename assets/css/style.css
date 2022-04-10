@@ -246,6 +246,12 @@ button:hover{
     ol{
         padding: 0px 9.5rem;
     }
+    #footer {
+        top: 44rem;
+    }
+    #answers{
+        padding: 0 1.5rem;
+    }
 }
 /* Tablet View */
 @media screen and (max-width: 820px){
