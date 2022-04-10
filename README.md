@@ -305,7 +305,7 @@ I was using the modal from W3C https://www.w3schools.com/howto/howto_css_modals.
 
 ## Fix
 
-I found a CCS Modal workaround instead and styled it. 
+I found a simple Javascript CCS Modal workaround instead and styled it. 
 
 ## UX Planning
 
@@ -436,6 +436,66 @@ Hover State:
 
 ![image](/docs/images/hover-state-screenshot.png)
 
+## Colour Palette:
+
+![image](/docs/images/colour-pallette-screenshot.png)
+
+## Iconography:
+
+- Toggle icons will match the colours from normal and dark mode.
+- Social share icons/buttons will be served by the 3rd party ShareThis widget.
+
+![image](/docs/images/darkmode-toggle-icons.png)
+![image](/docs/images/sharethis-preview.png)
+
+## The Surface Plane / Final Concept
+
+### Game Area Wireframe
+![image](/docs/images/gamearea-wireframe.png)
+
+### Score Area Wireframe
+![image](/docs/images/scorearea-wireframe.png)
+
+------
+
+### Credits / Borrowed Resources / Tools
+
+- Favicon 
+https://www.pngaaa.com/ - PNG Images For Free
+
+- Font Library 
+https://fonts.google.com/
+
+- Quiz Questions
+https://www.funtrivia.com/en/Movies/Spider-Man-4653.html
+
+
+- Share This widget
+https://sharethis.com/platform/share-buttons/
+- Dark Mode Functionality
+https://www.futurecodersweb.com/2021/06/create-dark-and-light-mode-toggle.html
+- Setup Alerting for the timer
+https://techfunda.com/howto/595/stop-timer
+https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- Restart Button Functionality: 
+https://stackoverflow.com/questions/5611119/how-to-make-a-refresh-button-using-javascript
+- Quiz Structure Inspiration
+https://www.youtube.com/watch?v=2jwdyO_UunE&t=2421s
+- Javascript CCS Modal Inspiration
+https://www.youtube.com/watch?v=uUCpopjPZdI
+- Spider-Man Background Image:
+https://wallpapersafari.com/w/19SZQb
+- RGBA Generator
+https://rgbacolorpicker.com/hex-to-rgba
+- Dark Mode Research
+https://blog.weekdone.com/why-you-should-switch-on-dark-mode/
+- Agile User Stories Support Documentation
+https://www.atlassian.com/agile/project-management/user-stories 
+- Inspired by the Love Maths Project. 
+- Wireframes produced using Balsamic
+- Support from my mentor Gerard McBride, Slack Community and Tutor Support (Ger)
+- Online Code Support and References: W3C Schools and Stackoverflow Community.
 
 
 
