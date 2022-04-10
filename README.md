@@ -74,6 +74,45 @@ The player can reset the quiz anytime by clicking the `Reset` button. This refre
 
 ![image](/docs/images/reset-button.png)
 
+### 5. ShareThis social sharing widget
+
+The player can share the game with family and friends via social media using the widget.
+This is a 3rd party service and includes a `Privacy Policy` to protect users, so they can control what personal browsing data is shared. 
+
+![image](/docs/images/share-this.png)
+
+![image](/docs/images/privacy-policy.png)
+
+### 5. Check Answers Area
+
+The player is not told what the answers are for the quiz but the player can check thier answers after the quiz to see what they got wrong and got right.
+
+![image](/docs/images/answers-check.png)
+
+------
+
+## Testing
+
+### Responsive Testing
+
+I have tested that the site is responsive by applying specific styles for the most common `CSS breakpoints`
+
+#### Breakpoints used for mobile devices:
+
+`max-width: 320px`
+
+#### Breakpoints used for tablet devices:
+
+1. `max-width: 820px`
+2. `max-width: 768px`
+
+
+
+
+
+
+
+
 
 
 
