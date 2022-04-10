@@ -28,13 +28,19 @@ body{
     --secondary-bg-color: rgb(68, 123, 190);
     --primary-text-color: rgb(241, 194, 50);
     --secondary-text-color: #999;
+    --text-shadow: 1px 1px #ff0000;
 }
 body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: rgb(43, 55, 132);
     --primary-text-color: rgb(223, 31, 45);
     --secondary-text-color: #eee;
+    --text-shadow: 1px 1px #4f04f1;
   }
+h1 {
+    text-shadow: var(--text-shadow);
+}
+
 
 #theme-toggler {
     position: fixed;
