@@ -99,6 +99,7 @@ I have tested that the site is responsive by applying specific styles for the mo
 
 #### Breakpoints used for mobile devices:
 
+`max-width: 480px`
 `max-width: 320px`
 
 #### Breakpoints used for tablet devices:
@@ -106,6 +107,33 @@ I have tested that the site is responsive by applying specific styles for the mo
 1. `max-width: 820px`
 2. `max-width: 768px`
 
+I used the Chrome inspect element to check the different CSS breakpoints.
+
+## User Stories
+
+### Quiz Logic
+
+`As a` Player.
+`I want to` answer five multi-choice questions.
+`So that` i can complete the quiz.
+
+### Countdown Timer
+
+`As a` Player.
+`I want to` click 'START' to start the countdown timer.
+`So that` i have sixty seconds to complete the quiz.
+
+### Window Alert
+
+`As a` Player.
+`I want to` be shown a window alert if I do not complete the quiz in time.
+`So that` the game tells me that I have ran out of time.
+`Otherwise` I will not be shown the alert.
+
+
+## Test Cases
+
+### Quiz Logic
 
 
 
