@@ -349,6 +349,62 @@ button:hover{
     }
 }
 /* Mobile View */
+@media screen and (max-width: 480px){
+    #title{
+        padding: 16px 0px 0px 6rem; 
+        text-align: inherit;
+    }
+    #theme-toggler{
+        top: 15px;
+        padding: 10px 15px;
+        right: 106px;
+    }
+    .questions{
+        margin: 23px 2rem;
+        width: 69vw;
+    }
+    ol{
+        padding: 0px 1.5rem;
+    }
+    .buttons{
+        padding-right: 78px;
+    }
+    #scoreboard{
+        width: 18rem;
+        padding: 1rem;
+        margin: 0 3rem;
+    }
+    #answerBank{
+        width: 18rem;
+        padding: 1rem;
+        margin: 0 3rem;
+    }
+    #footer {
+        top: 47rem;
+        width: 82vw;
+    }
+    .sharethis-inline-share-buttons {
+        position: fixed;
+        bottom: 18px;
+        width: 82%;
+    }
+    #st-cmp-v2 .st-cmp-app .st-cmp-settings{
+        width: 86px;
+        height: 24px;
+        background-color: #09cd18;
+        color: #fff;
+        cursor: pointer;
+        right: 100px;
+        bottom: 55px;
+        border-radius: 2px;
+        line-height: 11px;
+        box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    }   
+    .st-cmp-settings{
+        right: 100px;
+    } 
+}
+
 @media screen and (max-width: 320px){
     ol{
         padding: 0px 1.5rem;
