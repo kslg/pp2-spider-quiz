@@ -111,9 +111,9 @@ document.getElementById("gameStart").addEventListener("click", function(){
 
     timeleft -= 1;
     if(timeleft <= 0){
+        alert("Hey! You got it right! :D");
         clearInterval(downloadTimer);
         document.getElementById("countdown").innerHTML = "Time is up!"
-        alert("Hey! You got it right! :D");
     }else {
         alert = function() {};
         }

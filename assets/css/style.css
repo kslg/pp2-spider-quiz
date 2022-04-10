@@ -239,6 +239,10 @@ button:hover{
     ol{
         padding: 0px 3.5rem;
     }
+    .questions{
+        width: 35vw;
+        margin: 6rem auto;
+    }
 }
 
 /* Laptop View */
@@ -251,6 +255,9 @@ button:hover{
     }
     #answers{
         padding: 0 1.5rem;
+    }
+    .questions{
+        width: 48vw;
     }
 }
 /* Tablet View */
