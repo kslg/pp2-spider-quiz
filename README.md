@@ -408,8 +408,33 @@ Using the `MoSCoW prioritisation method` which is used in Agile project delivery
 #### MoSCoW Definition:
 ![image](/docs/images/moscow-screenshot.png)
  
+---
+## The Structure Plane
 
-### Scope of MVP
+### Site Architecture
+- Only one page is presented to the user with a dynamic elements being the question area, and the scoreboard area.
+
+![image](/docs/images/site-structure-screenshot.png)
+
+### Header and Footer
+- Normal Mode: Light Blue Background and Yellow Gold Text. 
+- Dark Mode: Dark Blue Background and Red Text. 
+
+Examples
+![image](/docs/images/header-mock-up.png)
+
+![image](/docs/images/footer-mock-up.png)
+
+## CTA Buttons
+Non-clicked State: 
+- White text box
+- Dark Blue text
+
+Hover State:
+- Dark Blue text box
+- Yellow Gold text
+
+![image](/docs/images/hover-state-screenshot.png)
 
 
 
