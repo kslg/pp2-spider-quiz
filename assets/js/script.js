@@ -143,18 +143,15 @@ themeToggler.onclick = () => {
     document.body.classList.remove('active');
   }
 };
-
+// Modal function
 const overlay = document.querySelector("#overlay");
-
   document.querySelector("#show-modal-btn").
   addEventListener("click", () => {
       overlay.style.display = "block";
   })
-
   document.querySelector("#close-modal-btn").
   addEventListener("click", () => {
       overlay.style.display = "none";
   })
-
   const modalOverlay = document.getElementById("overlay")
   modalOverlay.classList.add('hide')
