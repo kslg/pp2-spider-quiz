@@ -117,6 +117,12 @@ I used the Chrome inspect element to check the different CSS breakpoints.
 `I want to` answer five multi-choice questions.
 `So that` i can complete the quiz.
 
+### Correct and Incorrect Answer Logic
+
+`As a` Player.
+`I want to` see if the answers i select turn red or green.
+`So that` during the quiz i can see which of my answers are right or wrong.
+
 ### Countdown Timer
 
 `As a` Player.
@@ -130,10 +136,93 @@ I used the Chrome inspect element to check the different CSS breakpoints.
 `So that` the game tells me that I have ran out of time.
 `Otherwise` I will not be shown the alert.
 
+### Dark Mode
+
+`As a` Player.
+`I want to` be able to toggle between dark mode and light mode.
+`So that` i can view the game at night to reduce eye strain.
+
+### How to Play Modal
+
+`As a` Player.
+`I want to` be able to see a modal displayed.
+`So that` i can see instrucitons how to play the quiz.
+
+### Reset Button
+
+`As a` Player.
+`I want to` be able to restart the quiz and the countdown timer.
+`So that` i can see try to complete the quiz on time.
+
+### Social Share functionality
+
+`As a` Player.
+`I want to` share the game on social media.
+`So that` i can share the game with my family and friends.
+
+### Score area
+
+`As a` Player.
+`I want to` see my final score out of five.
+`So that` i know how many questions i got right.
+
+### Check Answers area
+
+`As a` Player.
+`I want to` be able to see my answers `but not` the actual answers.
+`So that` i know what questions i may have gotten wrong.
+
+### Privacy Policy
+
+`As a` Player.
+`I want to` control what data of mine is tracked and shared.
+`So that` i know what data of mine being tracked and shared.
+
+### Responsive Layout
+
+`As a` Player.
+`I want to` be able to play the quiz on my mobile phone, tablet and laptop.
+`So that` i can play the quiz anywhere and anytime i choose.
+
 
 ## Test Cases
 
 ### Quiz Logic
+I can go through the quiz which has five multiple-choice questions `PASSED`
+
+![image](/docs/images/fith-question.png)
+
+### Correct and Incorrect Answer Logic
+I should see my selection highlightd in red or green to show which answers are right and wrong. `PASSED`
+
+![image](/docs/images/correct-answer-green.png)
+![image](/docs/images/wrong-answer-red.png)
+
+### Countdown Timer
+
+When I click 'START' the countdown timer starts and I have sixty seconds.`PASSED`
+
+![image](/docs/images/countdown-timer.png)
+
+
+### Window Alert
+
+1. The window alert is displayed if I run out of tie to complete the quiz `PASSED`
+2. The alert should not display if I complete the quiz on time. `PASSED`
+
+![image](/docs/images/window-alert-times-up.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
