@@ -497,9 +497,29 @@ https://www.atlassian.com/agile/project-management/user-stories
 - Support from my mentor Gerard McBride, Slack Community and Tutor Support (Ger)
 - Online Code Support and References: W3C Schools and Stackoverflow Community.
 
+------
 
+### Descoped Requirements / Future Enhancements
+- Some requirements had to be descoped from the project due to time contraints. 
+- Descoping is a process which is part or Agile Project Management, and can be requirements that are brought back into a sprint or project at a later date.
 
+1. You are able to play the quiz without starting the timer.
+2. You can got the the next questions without answering any of them.
+3. Add more questions to the question bank and serve random questions to the player.
+4. Share your score with friends.
+5. Display a cover page intrducing the quiz. 
+6. A 3,2,1 countdown before starting the quiz.
 
+------
+
+### Unfixed Bug
+ Due to time constraints the following bugs are still unfixed. Following Agile practises, these bugs can go into a backlog of requirements and prioritised accordingly.
+
+- Make sure Privacy Policy link is displayed on all layouts.
+
+------
+
+<p align="center">End of document.</p>
 
 
 
