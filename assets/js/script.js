@@ -40,7 +40,6 @@ var span = document.querySelectorAll('span');
 var i = 0;
 var score = 0;
 
-
 //Function to display questions
 function displayQuestion() {
     for (var a=0;a<span.length;a++){
@@ -102,10 +101,13 @@ function checkAnswer(){
 }
 displayQuestion();
 
-// Countdown timer
-
+/** 
+ * Countdown timer which shows a window alert 
+ * if the player does not complete the quiz before the countdown ends
+ * if the player does complete the quiz before the countdown ends, then the window alert does not show
+ */ 
 document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 5;
+    var timeleft = 60;
 
     var downloadTimer = setInterval(function function1(){
     timeleft -= 1;
@@ -120,12 +122,6 @@ document.getElementById("gameStart").addEventListener("click", function(){
     }, 1000);
 });
 
-
-/* if (innerHTML = "Time is up!") {
-    
-}   */
-
-
 /** 
  * Connected to the Reset button and 
  * reloads the page so the player 
@@ -135,7 +131,7 @@ function refresh(){
     window.location.reload("Refresh")
   }
 
-  // Dark Mode function
+// Dark Mode function
 let themeToggler = document.getElementById('theme-toggler');
 
 themeToggler.onclick = () => {
