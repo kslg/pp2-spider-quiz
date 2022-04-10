@@ -157,7 +157,7 @@ I used the Chrome inspect element to check the different CSS breakpoints.
 ### Social Share functionality
 
 `As a` Player.
-`I want to` share the game on social media.
+`I want to` share the game on social media and see the icons in the footer.
 `So that` i can share the game with my family and friends.
 
 ### Score area
@@ -212,6 +212,39 @@ When I click 'START' the countdown timer starts and I have sixty seconds.`PASSED
 
 ![image](/docs/images/window-alert-times-up.png)
 
+### Dark Mode
+
+I should be able to toggle between normal and dark mode. `PASSED`
+
+### How to Play Modal
+
+I should be able to open and close the modal via the button. `PASSED`
+
+### Reset Button
+
+I should be able to restart the quiz by clicking the button `PASSED`
+
+### Social Share functionality
+
+I can see the social share icons in the footer `PASSED`
+
+
+### Score area
+
+I can see my final score out of five. `PASSED`
+
+### Check Answers area
+
+I can see my answers in the dedicated area. `PASSED`
+
+### Privacy Policy
+
+I can manage my privacy settings `FAILED`. 
+Not able to see the privacy link on certain devices and layouts.
+
+### Responsive Layout
+
+I can view the game on the standard reponsive views. `PASSED`
 
 
 
