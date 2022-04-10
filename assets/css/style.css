@@ -199,6 +199,8 @@ button:hover{
     bottom: 18px;
     width: 100%;
 }
+
+/* How to Play Modal */
 #modal{
     max-width: 600px;
     height: 300px;
@@ -244,7 +246,7 @@ button:hover{
         padding: 0px 1.5rem;
     }
     .option{
-        width: 8rem;
+        width: 12rem;
         font-size: 1rem;
     }
     #title{
@@ -267,4 +269,16 @@ button:hover{
     #countdown{
         font-size: medium;
     }
+    #quiz-container{
+        padding-bottom: 120px;
+    }
+    #st-cmp-v2 .st-cmp-app .st-cmp-settings span{
+        text-transform: uppercase;
+        font-size: 12px;
+        vertical-align: text-top;
+        position: absolute;
+        left: -5px;
+        top: 5px;
+    }
+    
 }

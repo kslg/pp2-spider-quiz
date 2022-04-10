@@ -21,7 +21,7 @@ var questionBank = [
         answer : 'Responsibility'
     },
     {
-        question : 'In Tobey Maguire&#39;s Spider-Man, how does Spider-Man shoot his webs?',
+        question : 'In Tobey Maguire&#39;s Spider-Man, how does he shoot webs?',
         option : ['Using Web Shooters', 'From his wrists', 'From his finger nails', 'They magically appear'],
         answer : 'From his wrists'
     }
