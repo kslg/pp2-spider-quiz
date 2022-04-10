@@ -64,8 +64,9 @@ h1 {
     bottom: 0;
     width: 100%;
 }
-#footer-text{
+#footer-text {
     text-align: center;
+    color: var(--primary-text-color);
 }
 
 .gameArea{
