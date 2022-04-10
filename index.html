@@ -49,10 +49,10 @@
                             <div id="question">
                             </div>
                                 <ol type="A">
-                                    <li class="option"><span id="option0" onclick="calcScore(this)" aria-label="Click or tap for answer one"></span></li>
-                                    <li class="option"><span id="option1" onclick="calcScore(this)" aria-label="Click or tap for answer two"></span></li>
-                                    <li class="option"><span id="option2" onclick="calcScore(this)" aria-label="Click or tap for answer three"></span></li>
-                                    <li class="option"><span id="option3" onclick="calcScore(this)" aria-label="Click or tap for answer four"></span></li>
+                                    <li class="option"><span id="option0" onclick="calcScore(this)" aria-labelledby="option0" aria-label="Click or tap for answer one"></span></li>
+                                    <li class="option"><span id="option1" onclick="calcScore(this)" aria-labelledby="option1" aria-label="Click or tap for answer two"></span></li>
+                                    <li class="option"><span id="option2" onclick="calcScore(this)" aria-labelledby="option2" aria-label="Click or tap for answer three"></span></li>
+                                    <li class="option"><span id="option3" onclick="calcScore(this)" aria-labelledby="option3" aria-label="Click or tap for answer four"></span></li>
                                 </ol>
                                 <!-- Question count -->
                                 <div id="questionCount" aria-label="This is the question counter, counting up to five">
@@ -61,10 +61,10 @@
                     <!-- Quiz Control Buttons -->
                     <div class="buttons">
                         <button type="button" id="gameStart" class="gameStart" aria-labelledby="gameStart" aria-label="Start the timer">Start</button>
-                        <button type="button" id="next" class="next" aria-label="Next question">Next</button>
+                        <button type="button" id="next" class="next" aria-labelledby="next" aria-label="Next question">Next</button>
                         <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset quiz">Reset</button>
                         <!-- Trigger the modal with a button -->
-                        <button type="button" id="show-modal-btn" aria-label="Click for instructions">How to play</button>
+                        <button type="button" id="show-modal-btn" aria-labelledby="show-modal-btn" aria-label="Click for instructions">How to play</button>
                         <!-- Modal -->
                         <div id="overlay">
                             <div id="modal">
@@ -82,9 +82,9 @@
                 </div>
             </div>
                 <!-- scoreboard section -->
-                <div id="scoreboard" aria-label="This is the scoreboard area">
+                <div id="scoreboard" aria-labelledby="scoreboard" aria-label="This is the scoreboard area">
                     <h2 id="score-title">Your Score</h2>
-                    <div id="score" aria-label="You final score for the quiz"></div>
+                    <div id="score" aria-labelledby="score" aria-label="You final score for the quiz"></div>
                     <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
                     <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
                 </div>  
@@ -99,9 +99,9 @@
     </section>
     <!-- The footer starts here -->
     <!-- Share This widget in the footer -->
-    <footer id="footer">
+    <footer id="footer" aria-labelledby="footer" aria-label="Share the quiz with family and friends on social media">
         <div><h3 id="footer-text">Share:</h3></div>
-        <div class="sharethis-inline-share-buttons" aria-label="Share the quiz with family and friends on social media"></div>
+        <div class="sharethis-inline-share-buttons"></div>
     </footer>
     <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
     <script src="./assets/js/script.js"></script>
