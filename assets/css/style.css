@@ -105,7 +105,8 @@ p{
     margin: 3rem auto;
     width: 70vw;
     padding: 2rem;
-    background: rgba(254,243,189,0.86);
+    /* background: rgba(254,243,189,0.86); */
+    background: rgba(230,230,250,0.90);
     cursor: default;
     border-radius: 1rem;
 }
@@ -259,6 +260,16 @@ button:hover{
 /******************** responsive queries start *******************/
 
 /* Desktop View */
+@media screen and (max-width: 1920px){
+    #footer{
+        top: 55rem
+    }
+    .gameArea{
+        height: 797px;
+    }
+}
+
+/* Desktop View */
 @media screen and (max-width: 1600px){
     #footer{
         top: 55rem;
@@ -277,7 +288,15 @@ button:hover{
         margin: 6rem auto;
     }
 }
-
+/* Laptop View  */
+@media screen and (max-width: 1440px){
+    #footer{
+        top: 43rem;
+    }
+    .gameArea{
+        height: 605px;
+    }
+}    
 /* Laptop View */
 @media screen and (max-width: 1280px){
     ol{
