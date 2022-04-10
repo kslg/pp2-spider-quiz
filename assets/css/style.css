@@ -33,7 +33,6 @@ body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: rgb(43, 55, 132);
     --primary-text-color: rgb(223, 31, 45);
-    /*--primary-text-color: rgb(177 ,19, 19); */
     --secondary-text-color: #eee;
   }
 
@@ -82,7 +81,7 @@ p{
     letter-spacing: 1px;
     color: #2b3784;
     line-height: 2;
-    color: var(--primary-text-color); 
+    color: var(--modal-text-color); 
     text-align: left;
 }
 
@@ -222,9 +221,11 @@ button:hover{
     left: 0;
     right: 0;
     padding: 0px 15px 0 15px;
+    border:rgb(233,31,45) 3px solid;
+    border-radius: 15px;
 }
 #close-modal-btn{
-    bottom: 0;
+    bottom: 6px;
     position: inherit;
     margin-left: -61px;
 }
@@ -233,15 +234,12 @@ button:hover{
     display: none;
 }
 
-.website-content{
+.website-content {
     height: 100vh;
 }
 
-#modal li{
-
-}
-#modal li::marker{
-
+#modal h2, h3, p {
+    color: #2b3784;
 }
 
 /******************** responsive queries start *******************/
