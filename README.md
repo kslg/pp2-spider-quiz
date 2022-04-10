@@ -282,15 +282,134 @@ Once I verified and tested by changes, I then deploy thr changes to Production.
 
 `$ git push` deploys the code to the GitHub and into the main branch of code which is connected to Production (the Live Public URL).
 
+## Bugs Encountered during Testing
+
+### Issue 1 - Stop the window alert from displaying
+
+The window alert was still displaying even when you completed the quiz on time. 
+
+![image](/docs/images/window-alert-issue.png)
+
+## Fix
+
+I had to delete the window alert after the quiz was over by using the `delete keyword` for the window object.
+
+![image](/docs/images/window-alert-fix.png)
+
+### Issue 2 - Modal code conflict
+
+Added a Javascript/CSS Modal to the quiz but this broke the answers section as the colours on the answers did not clear after you select an answer. There was a conflict in the code. 
+I was using the modal from W3C https://www.w3schools.com/howto/howto_css_modals.asp
+
+![image](/docs/images/modal-issue.png)
+
+## Fix
+
+I found a CCS Modal workaround instead and styled it. 
+
 ## UX Planning
 
 I used the 5 Planes of UX to provide a conceptual framework. 
 
+### The Strategy Plane
 
-------
+#### Mission Objectives / The What:
+
+ - Trivia Quiz game for Spider-man enthusiasts.
+ - Fun and visually entertaining.
+ - An unofficial quiz game.
+
+ #### The Why:
+
+- To celebrate the comic book hero.
+- For fans to test their general knowledge about Spider-man.
 
 
+### Ideas & Inspiration Mind Map
+![image](/docs/images/mindmap-screenshot.png)
 
+### Demographic
+
+ - Target Audience between: 9 years - 40 years
+ - All genders Welcome.
+
+
+### Colour Palette Ideas
+- Primary colours for easy accessibility and clear communication.
+- Also, matches the theme of the quiz.
+
+![image](/docs/images/colour-pallette-ideas.png)
+
+### Content Strategy
+- Challening questions for the quiz
+- Instructions for the user
+- Clear and simple language for the users to understand and operate the quiz.
+
+### Typography
+Fonts selected are `Heebo` and `Bebas Neue` from Google Fonts which are clear and easy to read. https://fonts.google.com/
+
+![image](/docs/images/google-fonts-screenshot.png)
+
+---
+
+## The Scope Plane
+
+### Functional Requirements
+
+1. Problem: If the users want to play the quiz at night, they may strain their eyes playing this. 
+
+    Solution: Implement night/dark mode for the quiz UI.
+
+2. Problem: To move to the next question, the user needs to click next to display the next question.
+
+    Solution: Make an event where the user clicks or taps on an answer which then moves on to
+the next question.
+
+3. Problem: Users need to be limited to a certain amount of time to play the quiz. This is one of the challenge aspects of the quiz
+
+    Solution: Add a countdown timer for one minute. 
+    If the time runs out before the quiz ends then the user is prompted with a message “Oh no! Times Up. Don’t worry, you can try again.”
+    Users can restart the quiz.
+    If the user completes the quiz within one minute the timer stops and the user sees the scores page.
+
+4. Problem: If the player wants to start the quiz they would need to refresh the browser.
+
+    Solution: Create a more intuitive refresh function by having a button to refresh the quiz.
+
+5. Problem: The player might not understand the aim of the game i.e how to play.
+
+    Solution: Create a popup with instructions on how to play.
+
+6. Problem: The player has no method to share the game with friends.
+
+    Solution: Add a share functionality so users can share the game with friends and family.
+
+### Content Requirements
+
+- Quiz questions and answers which can be easily updated via js file. 
+- Content on the site will be a mix of copy text and a background image.
+
+### Interaction Design
+
+- All CTA (Call to Action) buttons will change colour to let the customers know that the buttons and links are clickable. 
+
+- Once all five questions have been answered the player is directed to the score area.
+
+- Once the timer has run out the player is notified. 
+
+- The player is presented with an alert when the time has run out. Player has to click on the alert to close it.
+
+- The player cna find out how to play the game by opening up a modal popup giving instructions on how to play the game.
+
+### Scope of MVP
+
+Using the `MoSCoW prioritisation method` which is used in Agile project delivery to outline the importance of each requirement and what needs to be delivered in the MVP.
+
+#### MoSCoW Definition:
+![image](/docs/images/moscow-screenshot.png)
+ 
+
+### Scope of MVP
 
 
 
