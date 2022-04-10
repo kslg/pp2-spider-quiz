@@ -11,7 +11,7 @@ var questionBank = [
         answer : 'Tony Stark'
     },
     {
-        question : 'What is the acronym attributed to Tony Stark&#39;s high-tech glasses?',
+        question : 'Name the high-tech glasses in &#39;Far From Home&#39;',
         option : ['J.U.L.Y.', 'E.D.I.T.H.', 'S.H.I.E.L.D.', 'B.O.B'],
         answer : 'E.D.I.T.H.'
     },
