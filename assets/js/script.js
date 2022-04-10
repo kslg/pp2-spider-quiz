@@ -75,6 +75,7 @@ function nextQuestion(){
         points.innerHTML= score+ '/'+ questionBank.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block'
+        delete window.alert
     }
 }
 //Click events to next button
@@ -112,11 +113,9 @@ document.getElementById("gameStart").addEventListener("click", function(){
     " " + "seconds remaining";
     if(timeleft <= 0){
         console.log(i)
-        if (i < 4) {
         alert("times up, nevermind try again");
         document.getElementById("countdown").innerHTML = "Time is up!"
         clearInterval(downloadTimer);
-        }
     }
     }, 1000);
 });

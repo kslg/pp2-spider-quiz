@@ -69,12 +69,21 @@ body.active {
     height: 679px;
 }
 
-h2, h3, h4, p{
+h2, h3, h4{
     font-family: Heebo, sans-serif;
     letter-spacing: 1px;
     color: #2b3784;
     line-height: 2;
     color: var(--primary-text-color);
+}
+
+p{
+    font-family: Heebo, sans-serif;
+    letter-spacing: 1px;
+    color: #2b3784;
+    line-height: 2;
+    color: var(--primary-text-color); 
+    text-align: left;
 }
 
 #title{
@@ -212,6 +221,7 @@ button:hover{
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 0px 15px 0 15px;
 }
 #close-modal-btn{
     bottom: 0;
@@ -225,6 +235,13 @@ button:hover{
 
 .website-content{
     height: 100vh;
+}
+
+#modal li{
+
+}
+#modal li::marker{
+
 }
 
 /******************** responsive queries start *******************/
