@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@300&display=swap');
 
+/* helps browsers and devices scale the site more smoother */
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +23,8 @@ body{
     background: var(--primary-bg-color);    
 }
 
-/* Start of Dark Mode CSS */
+/* root CSS are the main colors used when Dark Mode is inactive/off */
+/* styles for H1 header */
 :root {
     --primary-bg-color: #eee;
     --secondary-bg-color: rgb(68, 123, 190);
@@ -31,6 +33,7 @@ body{
     --text-shadow: 1px 1px #ff0000;
     --filter: brightness(100%);
 }
+/* Colors used when Dark Mode is active/turned on */
 body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: rgb(43, 55, 132);
@@ -42,6 +45,7 @@ body.active {
 h1 {
     text-shadow: var(--text-shadow);
 }
+/* Styles for the Dark Mode switch */
 #theme-toggler {
     position: fixed;
     top: 15px;
@@ -54,7 +58,6 @@ h1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
   }
-/* End of Dark Mode CSS */
 
 #footer {
     background: var(--secondary-bg-color);
@@ -69,6 +72,7 @@ h1 {
     color: var(--primary-text-color);
 }
 
+/* background wallpaper is here with styles and dark mode filter */
 .gameArea{
     background: url("../images/spider-man-background.jpeg") no-repeat;
     filter: var(--filter);
@@ -76,6 +80,7 @@ h1 {
     height: 679px;
 }
 
+/* styles for and headers */
 h2, h3, h4{
     font-family: Heebo, sans-serif;
     letter-spacing: 1px;
@@ -83,7 +88,7 @@ h2, h3, h4{
     line-height: 2;
     color: var(--primary-text-color);
 }
-
+/* styles for text */
 p{
     font-family: Heebo, sans-serif;
     letter-spacing: 1px;
@@ -92,7 +97,7 @@ p{
     color: var(--modal-text-color); 
     text-align: left;
 }
-
+/* styles for title header */
 #title{
     text-align: center;
     padding: 0.8rem 0;
@@ -101,6 +106,8 @@ p{
     background: var(--secondary-bg-color);
     font-family: Bebas Neue, Times, serif;
 }
+
+/* styles for game area */
 .questions{
     margin: 3rem auto;
     width: 70vw;
@@ -113,7 +120,6 @@ p{
 #question{
     margin-bottom: 1rem;
 }
-
 #questionCount{
     color: rgb(43,55,132); 
     text-align: center;
@@ -126,9 +132,7 @@ p{
     color: rgb(43,55,132); 
     text-align: center;
     font-size: larger;
-
 }
-
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -179,7 +183,7 @@ button:hover{
     color: rgb(255, 217, 102);
     background: rgba(43, 55, 132, 1);
 }
-
+/* styles for scoreboard area */
 #scoreboard,#answerBank{
     width: 20rem;
     background: rgba(230,230,250,0.77);
@@ -216,14 +220,12 @@ button:hover{
 #answers{
     margin-top: 1rem;
 }
-
 /* Fixing the footer position for the share widget*/
 .sharethis-inline-share-buttons{
     position: fixed;
     bottom: 18px;
     width: 100%;
 }
-
 /* How to Play Modal */
 #modal{
     max-width: 600px;
@@ -244,21 +246,16 @@ button:hover{
     position: inherit;
     margin-left: -61px;
 }
-
 .hide {
     display: none;
 }
-
 .website-content {
     height: 100vh;
 }
-
 #modal h2, h3, p {
     color: #2b3784;
 }
-
 /******************** responsive queries start *******************/
-
 /* Desktop View */
 @media screen and (max-width: 1920px){
     #footer{
@@ -268,7 +265,6 @@ button:hover{
         height: 797px;
     }
 }
-
 /* Desktop View */
 @media screen and (max-width: 1600px){
     #footer{

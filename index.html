@@ -8,8 +8,7 @@
     <meta name="description" content="An unofficial quiz game inspired by the comic book hero Spider-man.">
     <meta name="keywords" content="spider-man, spiderman, spiderman game, quiz games, spidey games, spider-man quiz">
     <meta name="author" content="Krishan Gharu for Code Institute Portfolio Project 2">
-    
-    <!-- Font Awesome -->
+    <!-- Font Awesome Kit for Dark Mode -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,7 +16,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
-
     <!-- css file link -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -30,80 +28,81 @@
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=624caa3dc431db0019ab9ada&product=inline-share-buttons" async="async"></script>
 </head>
 <body>
+    <!-- This is the header section -->
     <header>
         <div id="theme-toggler" class="fas fa-moon" aria-label="Toggle between light and dark mode"></div>
         <h1 id="title">Spider-Quiz</h1>
     </header>
-<section>
-    <div class="gameArea">
-        <!-- quiz and scoreboard container -->    
-        <div class="container">
-            <!-- quiz container -->
-            <div id="quiz-container">
-                <!-- question container -->
-                <div class="questions" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
-                    <!-- Countdown timer -->
-                    <div id="countdown" aria-label="This is the countdown timer">
-                    </div>
-                        <!-- Quiz questions -->
-                        <div id="question">
+    <!-- This section is the entire game and score area -->
+    <section>
+        <div class="gameArea">
+            <!-- quiz and scoreboard container -->    
+            <div class="container">
+                <!-- quiz container -->
+                <div id="quiz-container">
+                    <!-- question container -->
+                    <div class="questions" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
+                        <!-- Countdown timer -->
+                        <div id="countdown" aria-label="This is the countdown timer">
                         </div>
-                            <ol type="A">
-                                <li class="option"><span id="option0" onclick="calcScore(this)" aria-label="Click or tap for answer one"></span></li>
-                                <li class="option"><span id="option1" onclick="calcScore(this)" aria-label="Click or tap for answer two"></span></li>
-                                <li class="option"><span id="option2" onclick="calcScore(this)" aria-label="Click or tap for answer three"></span></li>
-                                <li class="option"><span id="option3" onclick="calcScore(this)" aria-label="Click or tap for answer four"></span></li>
-                            </ol>
-                            <!-- Question count -->
-                            <div id="questionCount" aria-label="This is the question counter, counting up to five">
-                            </div>                          
-                </div>
-                        <!-- Quiz Control Buttons -->
-                        <div class="buttons">
-                            <button type="button" id="gameStart" class="gameStart" aria-label="Start. Click or tap to start the timer">Start</button>
-                            <button type="button" id="next" class="next" aria-label="Next. Click or tap to move on to the next question">Next</button>
-                            <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset. Click or tap to reset the quiz">Reset</button>
-                            <!-- Trigger the modal with a button -->
-                            <button type="button" id="show-modal-btn">How to play</button>
-                            <!-- Modal -->
-                            <div id="overlay">
-                                <div id="modal">
-                                    <h2>How to play</h2>
-                                    <hr>
+                            <!-- Quiz questions -->
+                            <div id="question">
+                            </div>
+                                <ol type="A">
+                                    <li class="option"><span id="option0" onclick="calcScore(this)" aria-label="Click or tap for answer one"></span></li>
+                                    <li class="option"><span id="option1" onclick="calcScore(this)" aria-label="Click or tap for answer two"></span></li>
+                                    <li class="option"><span id="option2" onclick="calcScore(this)" aria-label="Click or tap for answer three"></span></li>
+                                    <li class="option"><span id="option3" onclick="calcScore(this)" aria-label="Click or tap for answer four"></span></li>
+                                </ol>
+                                <!-- Question count -->
+                                <div id="questionCount" aria-label="This is the question counter, counting up to five">
+                                </div>                          
+                    </div>
+                    <!-- Quiz Control Buttons -->
+                    <div class="buttons">
+                        <button type="button" id="gameStart" class="gameStart" aria-label="Start. Click or tap to start the timer">Start</button>
+                        <button type="button" id="next" class="next" aria-label="Next. Click or tap to move on to the next question">Next</button>
+                        <button type="button" value="Refresh" onClick="refresh(this)" aria-label="Reset. Click or tap to reset the quiz">Reset</button>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" id="show-modal-btn">How to play</button>
+                        <!-- Modal -->
+                        <div id="overlay">
+                            <div id="modal">
+                                <h2>How to play</h2>
+                                <hr>
                                     <p>The aim of the game is to answer all five questions before the timer runs out. You have 60 seconds, good luck!</p>
-                                    <h3>Controls:</h3>
-                                        <p>'START' to start the countdown timer.</p>
-                                        <p>'NEXT' to move to the next question.</p>
-                                        <p>'RESTART' to reset the quiz.</p>           
-                                    <button type="button" id="close-modal-btn" class="modalClose">Close</button>
-                                </div>
+                                <h3>Controls:</h3>
+                                    <p>'START' to start the countdown timer.</p>
+                                    <p>'NEXT' to move to the next question.</p>
+                                    <p>'RESTART' to reset the quiz.</p>           
+                                <button type="button" id="close-modal-btn" class="modalClose">Close</button>
                             </div>
                         </div>
+                    </div>
+                </div>
             </div>
+                <!-- scoreboard section -->
+                <div id="scoreboard" aria-label="This is the scoreboard area">
+                    <h2 id="score-title">Your Score</h2>
+                    <div id="score" aria-label="You final score for the quiz"></div>
+                    <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+                    <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
+                </div>  
+                <!-- Answers section -->
+                <div id="answerBank" aria-label="Your answers">
+                    <h2>Answers :</h2>
+                    <ol type="1" id="answers">
+                    </ol>
+                    <button type="button" id="score-btn-two" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
+                </div>
         </div>
-            <!-- scoreboard section -->
-            <div id="scoreboard" aria-label="This is the scoreboard area">
-                <h2 id="score-title">Your Score</h2>
-                <div id="score" aria-label="You final score for the quiz"></div>
-                <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
-                <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
-            </div>  
-            <!-- Answers section -->
-            <div id="answerBank" aria-label="Your answers">
-                <h2>Answers :</h2>
-                <ol type="1" id="answers">
-                </ol>
-                <button type="button" id="score-btn-two" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
-            </div>
-    </div>
-</section>
-
+    </section>
+    <!-- The footer starts here -->
     <!-- Share This widget in the footer -->
     <footer id="footer">
         <div><h3 id="footer-text">Share:</h3></div>
         <div class="sharethis-inline-share-buttons" aria-label="Share the quiz with family and friends on social media"></div>
     </footer>
-
     <!-- Adding JS file at the bottom of the body closing tag so if the js fails to load, the rest of the elements can still render.-->
     <script src="./assets/js/script.js"></script>
 </body>
