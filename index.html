@@ -30,7 +30,7 @@
 <body>
     <!-- This is the header section -->
     <header>
-        <div id="theme-toggler" class="fas fa-moon" aria-label="Toggle between light and dark mode"></div>
+        <div id="theme-toggler" class="fas fa-moon" role="button" aria-label="Toggle between light and dark mode"></div>
         <h1 id="title">Spider-Quiz</h1>
     </header>
     <!-- This section is the entire game and score area -->
@@ -41,9 +41,9 @@
                 <!-- quiz container -->
                 <div id="quiz-container">
                     <!-- question container -->
-                    <div class="questions" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
+                    <div class="questions" role="presentation" aria-label="This is the questions area for the quiz. There are five multiple-choice questions">
                         <!-- Countdown timer -->
-                        <div id="countdown" aria-label="This is the countdown timer">
+                        <div id="countdown" role="presentation" aria-label="This is the countdown timer">
                         </div>
                             <!-- Quiz questions -->
                             <div id="question">
@@ -84,12 +84,12 @@
                 <!-- scoreboard section -->
                 <div id="scoreboard">
                     <h2 id="score-title">Your Score</h2>
-                    <div id="score" aria-label="Your final score for the quiz"></div>
+                    <div id="score" role="presentation" aria-label="Your final score for the quiz"></div>
                     <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
                     <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
                 </div>  
                 <!-- Answers section -->
-                <div id="answerBank" aria-label="Your answers">
+                <div id="answerBank" role="presentation" aria-label="Your answers">
                     <h2>Answers :</h2>
                     <ol type="1" id="answers">
                     </ol>
