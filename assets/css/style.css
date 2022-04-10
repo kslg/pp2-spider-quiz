@@ -54,12 +54,12 @@ body.active {
     background: var(--secondary-bg-color);
     padding: 0px 0 0 0;
     position: fixed;
+    top: 44rem;
     bottom: 0;
     width: 100%;
 }
 #footer-text{
     text-align: center;
-    line-height: 125px;
 }
 
 .gameArea{
@@ -226,8 +226,45 @@ button:hover{
 
 /******************** responsive queries start *******************/
 
-/* @media screen and (max-width: 1280px){
+/* Laptop View */
+@media screen and (max-width: 1280px){
     ol{
-        padding: 0px 22.5rem;
+        padding: 0px 19.5rem;
     }
-} */
+}
+/* Tablet View */
+@media screen and (max-width: 768px){
+    ol{
+        padding: 0px 8.5rem;
+    }
+}
+/* Mobile View */
+@media screen and (max-width: 320px){
+    ol{
+        padding: 0px 1.5rem;
+    }
+    .option{
+        width: 8rem;
+        font-size: 1rem;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    #theme-toggler{
+        padding: 10px 15px;
+        font-size: 17px;
+    }
+    #footer{
+        top: 25rem;
+    }
+    .gameArea{
+        height: 389px;
+    }
+    .questions{
+        margin: 0rem auto;
+        padding: 0rem;
+    }
+    #countdown{
+        font-size: medium;
+    }
+}
