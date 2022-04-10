@@ -105,15 +105,15 @@ displayQuestion();
 // Countdown timer
 
 document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 15;
+    var timeleft = 5;
 
     var downloadTimer = setInterval(function function1(){
     timeleft -= 1;
     document.getElementById("countdown").innerHTML = timeleft + 
     " " + "seconds remaining";
-    if(timeleft <= 0){
+    if(timeleft <= -1){
         console.log(i)
-        alert("times up, nevermind try again");
+        alert("Oh no! Times up. Don't worry, you can try again.");
         document.getElementById("countdown").innerHTML = "Time is up!"
         clearInterval(downloadTimer);
     }

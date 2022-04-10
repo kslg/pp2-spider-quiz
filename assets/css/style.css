@@ -37,13 +37,11 @@ body.active {
     --primary-text-color: rgb(223, 31, 45);
     --secondary-text-color: #eee;
     --text-shadow: 1px 1px #4f04f1;
-    --filter: brightness(90%);
+    --filter: brightness(85%);
   }
 h1 {
     text-shadow: var(--text-shadow);
 }
-
-
 #theme-toggler {
     position: fixed;
     top: 15px;
