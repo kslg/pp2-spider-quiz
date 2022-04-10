@@ -49,13 +49,13 @@
                             <div id="question">
                             </div>
                                 <ol type="A">
-                                    <li class="option"><span id="option0" onclick="calcScore(this)" aria-labelledby="option0" aria-label="Click or tap for answer one"></span></li>
-                                    <li class="option"><span id="option1" onclick="calcScore(this)" aria-labelledby="option1" aria-label="Click or tap for answer two"></span></li>
-                                    <li class="option"><span id="option2" onclick="calcScore(this)" aria-labelledby="option2" aria-label="Click or tap for answer three"></span></li>
-                                    <li class="option"><span id="option3" onclick="calcScore(this)" aria-labelledby="option3" aria-label="Click or tap for answer four"></span></li>
+                                    <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                                    <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                                    <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                                    <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
                                 </ol>
                                 <!-- Question count -->
-                                <div id="questionCount" aria-label="This is the question counter, counting up to five">
+                                <div id="questionCount" role="presentation" aria-label="This is the question counter, counting up to five">
                                 </div>                          
                     </div>
                     <!-- Quiz Control Buttons -->
@@ -82,9 +82,9 @@
                 </div>
             </div>
                 <!-- scoreboard section -->
-                <div id="scoreboard" aria-labelledby="scoreboard" aria-label="This is the scoreboard area">
+                <div id="scoreboard">
                     <h2 id="score-title">Your Score</h2>
-                    <div id="score" aria-labelledby="score" aria-label="You final score for the quiz"></div>
+                    <div id="score" aria-label="Your final score for the quiz"></div>
                     <button type="button" id="score-btn-one" onclick="backToQuiz()" aria-label="Click or tap to go back to the quiz">Back to Quiz</button>
                     <button type="button" id="check-answer" onclick="checkAnswer()" aria-label="Click or tap to check your answers">Check Answers</button>
                 </div>  
