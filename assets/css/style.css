@@ -238,7 +238,10 @@ button:hover{
         height: 797px;
     }
     ol{
-        padding: 0px 3.5rem;
+        padding: 0px 8.5rem;
+    }
+    #answers{
+        padding: 0 1.5rem;
     }
     .questions{
         width: 35vw;
@@ -289,6 +292,7 @@ button:hover{
     }
     .questions{
         margin: 8rem auto;
+        width: 72vw;
     }
     #answerBank li{
         text-align: left;
@@ -322,6 +326,7 @@ button:hover{
     .questions{
         margin: 0rem auto;
         padding: 0rem;
+        width: 80vw;
     }
     #countdown{
         font-size: medium;

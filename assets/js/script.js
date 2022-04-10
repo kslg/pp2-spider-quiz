@@ -40,6 +40,7 @@ var span = document.querySelectorAll('span');
 var i = 0;
 var score = 0;
 
+
 //Function to display questions
 function displayQuestion() {
     for (var a=0;a<span.length;a++){
@@ -106,18 +107,17 @@ document.getElementById("gameStart").addEventListener("click", function(){
     var timeleft = 15;
 
     var downloadTimer = setInterval(function function1(){
+    timeleft -= 1;
     document.getElementById("countdown").innerHTML = timeleft + 
     " " + "seconds remaining";
-
-    timeleft -= 1;
     if(timeleft <= 0){
-        alert("Hey! You got it right! :D");
-        console.log('alert')
-        clearInterval(downloadTimer);
+        console.log(i)
+        if (i < 4) {
+        alert("times up, nevermind try again");
         document.getElementById("countdown").innerHTML = "Time is up!"
-    }else {
-        alert = function() {};
+        clearInterval(downloadTimer);
         }
+    }
     }, 1000);
 });
 
