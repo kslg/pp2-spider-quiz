@@ -32,7 +32,8 @@ body{
 body.active {
     --primary-bg-color: #222;
     --secondary-bg-color: rgb(43, 55, 132);
-    --primary-text-color: rgb(177 ,19, 19);
+    --primary-text-color: rgb(223, 31, 45);
+    /*--primary-text-color: rgb(177 ,19, 19); */
     --secondary-text-color: #eee;
   }
 

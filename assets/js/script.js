@@ -112,6 +112,7 @@ document.getElementById("gameStart").addEventListener("click", function(){
     timeleft -= 1;
     if(timeleft <= 0){
         alert("Hey! You got it right! :D");
+        console.log('alert')
         clearInterval(downloadTimer);
         document.getElementById("countdown").innerHTML = "Time is up!"
     }else {
