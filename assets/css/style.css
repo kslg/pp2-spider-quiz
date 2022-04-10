@@ -29,6 +29,7 @@ body{
     --primary-text-color: rgb(241, 194, 50);
     --secondary-text-color: #999;
     --text-shadow: 1px 1px #ff0000;
+    --filter: brightness(100%);
 }
 body.active {
     --primary-bg-color: #222;
@@ -36,6 +37,7 @@ body.active {
     --primary-text-color: rgb(223, 31, 45);
     --secondary-text-color: #eee;
     --text-shadow: 1px 1px #4f04f1;
+    --filter: brightness(90%);
   }
 h1 {
     text-shadow: var(--text-shadow);
@@ -71,6 +73,7 @@ h1 {
 
 .gameArea{
     background: url("../images/spider-man-background.jpeg") no-repeat;
+    filter: var(--filter);
     background-size: cover;
     height: 679px;
 }
