@@ -247,7 +247,47 @@ Not able to see the privacy link on certain devices and layouts.
 I can view the game on the standard reponsive views. `PASSED`
 
 
+## HTML and CSS Code Validation
 
+Both the W3C Markup HTML Validator and W3C CSS Validator were used to to confirm there are no errors in the codebase.
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkslg.github.io%2Fpp2-spider-quiz%2F" target="_blank">W3C Markup Validator Report</a>
+
+![image](/docs/images/html-validation.png)
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkslg.github.io%2Fpp2-spider-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">W3C CSS Validator Report</a>
+
+![image](/docs/images/css-validation.png)
+
+------
+
+## Deployment
+
+I worked on my local repository before deploying the code to Staging and then Production (Live Site).
+
+### Deployment to Staging
+
+I first deploy my changes to the `Staging Area` so I can preview the changes before deploying to Production.
+
+`$ git add .` - Adding this to the editor terminal commits files to the Staging area.
+The period (.) at the end will add all files to the commit.
+
+`$ git commit -m “{Commit Details}”` - Pushes the latest changes to the GIT Repository.
+`-m` means "message" which is common practice to add so you and other developers know what changes were being made.
+
+
+### Deployment to Production
+
+Once I verified and tested by changes, I then deploy thr changes to Production.
+
+`$ git push` deploys the code to the GitHub and into the main branch of code which is connected to Production (the Live Public URL).
+
+## UX Planning
+
+I used the 5 Planes of UX to provide a conceptual framework. 
+
+
+------
 
 
 
