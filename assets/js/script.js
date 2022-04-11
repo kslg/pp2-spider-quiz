@@ -106,7 +106,9 @@ displayQuestion();
  * if the player does not complete the quiz before the countdown ends
  * if the player does complete the quiz before the countdown ends, then the window alert does not show
  */ 
-document.getElementById("gameStart").addEventListener("click", function(){
+ document.getElementById("gameStart").addEventListener("click", function(){
+    document.getElementById("question-buttons").style.display = "block"
+    document.getElementById("welcome-text").style.display = "none"
     var timeleft = 60;
 
     var downloadTimer = setInterval(function function1(){

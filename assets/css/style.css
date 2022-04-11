@@ -255,6 +255,15 @@ button:hover{
 #modal h2, h3, p {
     color: #2b3784;
 }
+#question-buttons {
+    display: none;
+}
+#welcome-text {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: #2b3784;
+}
 /******************** responsive queries start *******************/
 /* Desktop View */
 @media screen and (max-width: 1920px){
