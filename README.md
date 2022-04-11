@@ -524,7 +524,7 @@ https://www.atlassian.com/agile/project-management/user-stories
 - Some requirements had to be descoped from the project due to time contraints. 
 - Descoping is a process which is part or Agile Project Management, and can be requirements that are brought back into a sprint or project at a later date.
 
-1. You can got the the next question without answering any of them. Conditional logic needed.
+1. You can go to the next question without answering any of them. Conditional logic needed.
 2. Add more questions to the question bank and serve random questions to the player.
 3. Share your score with friends.
 4. Display a cover page intrducing the quiz. 
