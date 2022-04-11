@@ -419,15 +419,19 @@ button:hover{
     #theme-toggler{
         padding: 10px 15px;
         font-size: 17px;
+        right: 15px;
+        top: 9px;
     }
     #footer{
         top: 25rem;
+        width: 100vw;
     }
     .gameArea{
         height: 389px;
+        width: 20rem;
     }
     .questions{
-        margin: 0rem auto;
+        margin: 0.5rem auto;
         padding: 0rem;
         width: 80vw;
     }
@@ -444,5 +448,13 @@ button:hover{
     #answerBank{
         padding: 1rem;
         top: 1rem;
+    }
+    .sharethis-inline-share-buttons {
+        position: fixed;
+        bottom: 15px;
+        width: 100%;
+    }
+    .buttons {
+        padding-right: 0px;
     }
 }
