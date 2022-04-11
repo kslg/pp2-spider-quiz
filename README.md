@@ -17,7 +17,7 @@ I’ve added ARIA attributes to buttons and game sections. This is to help disab
 
 I’ve used Symantic HTML markup which helps browsers to understand the context of the content, and also helps with the accessibility for users with impairments.
 
-I’ve used `role` Attribute on buttons and sections of the game to explain what they are.
+I’ve used `role` and `aria-label` attributes on buttons and sections of the game to explain what they are.
 
 ------
 
@@ -45,7 +45,14 @@ I added a `description`, `keywords` and `author`. Search Engines will display th
 
 ## Features List
 
-### 1. Countdown timer with a conditional window alert.
+### 1. Welcome Screen
+
+On page load the player is presented with `welcome text` before being able to start the quiz.
+The player can also click 'How to play' to see instructions first.
+
+![image](/docs/images/welcome-text.png)
+
+### 2. Countdown timer with a conditional window alert.
 
 The challenge element of the game is a countdown timer. The player has sixty seconds to answer all five questions in time. 
 If the player cannot answer all five questions then the player is presented with a window alert letting the player know that the time is up.
@@ -54,38 +61,38 @@ If the player completes the quiz with the time, then the alert does not display.
 
 ![image](/docs/images/window-alert.png)
 
-### 2. Modal for game instructions
+### 3. Modal for game instructions
 
 Instructions are provide for the player in the form of a modal.
 When you click 'How to Play' the modal pops up.
 
 ![image](/docs/images/how-to-play-modal.png)
 
-### 3. Dark Mode
+### 4. Dark Mode
 
 The player is given a toggle to enable dark-mode which benefits the user's health and wellbeing. 
-Dark mode can help reduce eye strain and can also benefit prolong battery life for mobie devices. 
+Dark mode can help reduce eye strain, and can also prolong battery life for mobie devices. 
 
 ![image](/docs/images/dark-mode-enabled.png)
 
-### 4. Quiz Reset Button
+### 5. Quiz Reset Button
 
 The player can reset the quiz anytime by clicking the `Reset` button. This refreshes the page.
 
 ![image](/docs/images/reset-button.png)
 
-### 5. ShareThis social sharing widget
+### 6. ShareThis social sharing widget
 
 The player can share the game with family and friends via social media using the widget.
-This is a 3rd party service and includes a `Privacy Policy` to protect users, so they can control what personal browsing data is shared. 
+This is a `3rd party service` and includes a `Privacy Policy` to protect users, so they can control what personal browsing data is shared. 
 
 ![image](/docs/images/share-this.png)
 
 ![image](/docs/images/privacy-policy.png)
 
-### 5. Check Answers Area
+### 7. Check Answers Area
 
-The player is not told what the answers are for the quiz but the player can check thier answers after the quiz to see what they got wrong and got right.
+The player is not told what the answers are for the quiz but the player can check their answers after the quiz to see what they got wrong and got right.
 
 ![image](/docs/images/answers-check.png)
 
@@ -99,8 +106,8 @@ I have tested that the site is responsive by applying specific styles for the mo
 
 #### Breakpoints used for mobile devices:
 
-`max-width: 480px`
-`max-width: 320px`
+1. `max-width: 480px`
+2. `max-width: 320px`
 
 #### Breakpoints used for tablet devices:
 
@@ -110,6 +117,13 @@ I have tested that the site is responsive by applying specific styles for the mo
 I used the Chrome inspect element to check the different CSS breakpoints.
 
 ## User Stories
+
+### Welcome Screen
+
+`As a` Player.
+`I want to` see the welcome screen.
+`So that` i know the quiz is ready for me to start.
+`Also` i should be able to click 'Hot to play' to see instructions before playing.
 
 ### Quiz Logic
 
@@ -186,6 +200,12 @@ I used the Chrome inspect element to check the different CSS breakpoints.
 
 
 ## Test Cases
+
+### Welcome Screen
+
+1. I can see the welcome screen on page load `PASSED`
+2. I cannot start the quiz until i click 'START' which starts the quiz and the timer. `PASSED`
+3. I can click 'How to play' before starting the game.`PASSED`
 
 ### Quiz Logic
 I can go through the quiz which has five multiple-choice questions `PASSED`
@@ -421,6 +441,7 @@ Using the `MoSCoW prioritisation method` which is used in Agile project delivery
 - Dark Mode: Dark Blue Background and Red Text. 
 
 Examples
+
 ![image](/docs/images/header-mock-up.png)
 
 ![image](/docs/images/footer-mock-up.png)
@@ -503,12 +524,11 @@ https://www.atlassian.com/agile/project-management/user-stories
 - Some requirements had to be descoped from the project due to time contraints. 
 - Descoping is a process which is part or Agile Project Management, and can be requirements that are brought back into a sprint or project at a later date.
 
-1. You are able to play the quiz without starting the timer.
-2. You can got the the next questions without answering any of them.
-3. Add more questions to the question bank and serve random questions to the player.
-4. Share your score with friends.
-5. Display a cover page intrducing the quiz. 
-6. A 3,2,1 countdown before starting the quiz.
+1. You can got the the next question without answering any of them. Conditional logic needed.
+2. Add more questions to the question bank and serve random questions to the player.
+3. Share your score with friends.
+4. Display a cover page intrducing the quiz. 
+5. A 3,2,1 countdown before starting the quiz.
 
 ------
 
