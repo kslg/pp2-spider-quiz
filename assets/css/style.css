@@ -393,8 +393,8 @@ button:hover{
 /* Mobile View */
 @media screen and (max-width: 480px){
     #title{
-        padding: 16px 0px 0px 9rem; 
-        text-align: inherit;
+        padding: 1rem 0px 0px 0rem;
+        text-align: center;
     }
     #theme-toggler{
         top: 15px;
@@ -538,4 +538,8 @@ button:hover{
     .buttons {
         padding-right: 0px;
     }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 4) {
+    /* CSS */
 }
