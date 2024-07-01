@@ -110,7 +110,7 @@ p{
 /* styles for game area */
 .questions{
     margin: 3rem auto;
-    width: 70vw;
+    width: 26vw;
     padding: 2rem;
     /* background: rgba(254,243,189,0.86); */
     background: rgba(230,230,250,0.90);
@@ -147,7 +147,7 @@ p{
 }
 ol{
     position: relative;
-    padding: 0 22.5rem;
+    padding: 0 6.5rem;
     color: rgb(43,55,132);
 }
 span{
@@ -185,7 +185,7 @@ button:hover{
 }
 /* styles for scoreboard area */
 #scoreboard,#answerBank{
-    width: 20rem;
+    width: 26rem;
     background: rgba(230,230,250,0.77);
     padding: 2rem;
     text-align: center;
@@ -264,6 +264,16 @@ button:hover{
     text-align: center;
     color: #2b3784;
 }
+
+#st-cmp-v2 .st-cmp-app .st-cmp-settings span {
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: text-top;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+
 /******************** responsive queries start *******************/
 /* Desktop View */
 @media screen and (max-width: 1920px){
@@ -283,7 +293,7 @@ button:hover{
         height: 797px;
     }
     ol{
-        padding: 0px 8.5rem;
+        padding: 0px 6.5rem;
     }
     #answers{
         padding: 0 1.5rem;
